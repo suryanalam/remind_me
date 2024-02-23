@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <h4 class="header-title">Remind Me</h4>
+      <button
+        type="button"
+        class="add-btn"
+        onclick="handleOpenModel('add-model')"
+      >
+        Add reminder
+      </button>
+    </header>
+    <main class="main-bg" id="main-bg"></main>
+    <section class="model" id="add-model">
+      <span class="close-model" onclick="handleCloseModel('add-model')">✕</span>
+      <form class="add-form" id="add-form">
+        <label for="reminder_text">What to Remind? *</label>
+        <input
+          type="text"
+          id="reminder-text"
+          class="reminder-input"
+          title="reminder-text"
+          required
+          name="reminder_text"
+          required
+        />
+        <label for="reminder_date">On which Date? *</label>
+        <input
+          type="date"
+          id="reminder-date"
+          class="reminder-input"
+          title="reminder-date"
+          name="reminder_date"
+          required
+        />
+        <label for="reminder_time">At what Time? *</label>
+        <input
+          type="time"
+          id="reminder-time"
+          class="reminder-input"
+          title="reminder-time"
+          name="reminder_time"
+          required
+        />
+        <button type="submit">ADD</button>
+      </form>
+    </section>
+    <section class="model" id="update-model">
+      <span class="close-model" onclick="handleCloseModel('update-model')">
+        ✕
+      </span>
+      <form class="update-form" id="update-form">
+        <input type="hidden" id="update-id" name="update_id" />
+        <label for="update_text">What to Remind? *</label>
+        <input
+          type="text"
+          id="update-text"
+          class="reminder-input"
+          title="reminder-text"
+          name="update_text"
+          required
+        />
+        <label for="update_date">On which Date? *</label>
+        <input
+          type="date"
+          id="update-date"
+          class="reminder-input"
+          title="reminder-date"
+          name="update_date"
+          required
+        />
+        <label for="update_time">At what Time? *</label>
+        <input
+          type="time"
+          id="update-time"
+          class="reminder-input"
+          title="reminder-time"
+          name="update_time"
+          required
+        />
+        <button type="submit">UPDATE</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "iffex7o9j8p",
+        "reminder_text" : "Worksop on Figma",
+        "reminder_date" : "2024-03-05",
+        "reminder_time" : "08:00"
+    },
+    {
+        "id": "kbtuzob7tab",
+        "reminder_text" : "Download Github Course Completion Certificate",
+        "reminder_date" : "2024-02-23",
+        "reminder_time" : "16:00"
+    },
+    {
+        "id": "ae83da3hmrt",
+        "reminder_text" : "Buy Home Essentials after Office",
+        "reminder_date" : "2024-02-24",
+        "reminder_time" : "11:00"
+    },
+    {
+        "id": "7p4l4g3qnho",
+        "reminder_text" : "Meeting on project requirements",
+        "reminder_date" : "2024-02-28",
+        "reminder_time" : "15:00"
+    }
+]
